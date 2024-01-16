@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Save the Earth</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/sustainability.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="icon" type="image/x-icon" href="images/planet-earth-logo.png">
+  </head>
+  <body>
+    <!--Navbar-->
+    <header>
+      <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <img src="images/planet-earth-logo.png" alt="Logo" style="width: auto;" />
+        </a>
+        
+        <div class="navb-items d-none d-xl-flex">
+          <div class="nav-item dropdown d-flex">
+            <button type="button" class="btn" onclick="location.href='index.html'">Home</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html">Home</a></li>
+              <li><a class="dropdown-item" href="index.html#index-content">Content</a></li>
+              <li><a class="dropdown-item" href="index.html#index-cardgame">Card Game</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-item dropdown d-flex">
+            <button type="button" class="btn text-nowrap" onclick="location.href='about.html'">About Me</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">About Me</a></li>
+              <li><a class="dropdown-item" href="about.html#about-intro">Intro</a></li>
+              <li><a class="dropdown-item" href="about.html#about-personality">Personality</a></li>
+              <li><a class="dropdown-item" href="about.html#about-values">Values</a></li>
+              <li><a class="dropdown-item" href="about.html#about-interests">Interests</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-item  dropdown d-flex">
+            <button type="button" class="btn" onclick="location.href='sustainability.html'">Sustainability</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sustainability.html">Sustainability</a></li>
+              <li><a class="dropdown-item" href="sustainability.html#sus-intro">Intro</a></li>
+              <li><a class="dropdown-item" href="sustainability.html#sus-thoughts">Thoughts</a></li>
+              <li><a class="dropdown-item" href="sustainability.html#sus-tips">Tips</a></li>
+              <li><a class="dropdown-item" href="sustainability.html#sus-goals">Goals</a></li>
+              <li><a class="dropdown-item" href="sustainability.html#sus-efforts">Singapore's efforts</a></li>
+              <li><a class="dropdown-item" href="sustainability.html#sus-pledge">Pledge</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-item dropdown d-flex">
+            <button type="button" class="btn text-nowrap" data-bs-toggle="button"  onclick="location.href='green@sp.html'">Green @ SP</button>
+            <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="green@sp.html">Green @ SP</a></li>
+              <li><a class="dropdown-item" href="green@sp.html#sp-pledge">SP's Pledge</a></li>
+              <li><a class="dropdown-item" href="green@sp.html#sp-progress">Progress</a></li>
+              <li><a class="dropdown-item" href="green@sp.html#sp-initiatives">Initiatives</a></li>
+              <li><a class="dropdown-item" href="green@sp.html#sp-collab">Collabs & Partnerships</a></li>
+            </ul>
+          </div>
+
+          <div class="item-button">
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Contact Me
+            </button>
+          </div>
+          
+          <!-- Modal-Contact -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content modal-content-contact">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Me!</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modal-body-contact">
+                  <form class="mb-5">
+                    <div class="mb-3 row">
+                      <label for="staticEmail" class="col-sm-2 col-form-label">Email:</label>
+                      <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="yongjie@example.com">
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+
+                  <div class="d-inline-flex">
+                    <a class="mx-2" href="https://www.instagram.com/li.y0ng/" target="_blank"><img src="images/contactimg1.png" alt=""></a>
+                    <!--Instagram Imgage - from: https://www.freepik.com/free-vector/social-media-icons-vector-set-with-facebook-instagram-twitter-tiktok-youtube-logos_17221200.htm#query=instagram%20logo%20white&position=0&from_view=keyword&track=ais-->
+                    <a class="mx-2" href="tel:97262926" target="_blank"><img src="images/contactimg2.png" alt=""></a>
+                    <!--Phone Image - from: https://icon-library.com/icon/phone-white-icon-23.html-->
+                    <a class="mx-2" href="mailto:yongjie2468@gmail.com" target="_blank"><img src="images/contactimg3.png" alt=""></a>
+                    <!--E-Mail Image - from: https://www.pngkit.com/bigpic/u2e6u2u2q8t4a9u2/-->
+                    <a class="mx-2" href="https://www.youtube.com/@Wuddke" target="_blank"><img src="images/youtube.logo.png" alt=""></a>
+                    <!--E-Mail Image - from: https://www.pngkit.com/bigpic/u2e6u2u2q8t4a9u2/-->
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal-mobile -->
+        <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="modal" data-bs-target="#navbModal">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+
+        <!-- Modal-mobile -->
+        <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-mobile">
+            <div class="modal-content modal-content-mobile">
+              <div class="modal-header modal-header-mobile">
+                <img src="images/planet-earth-logo2.png" alt="Logo" />
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+
+              <div class="modal-body-mobile">
+                <div class="modal-line">
+                  <img src="images/home.png" alt=""><a href="index.html">Home</a> <!--Image taken from:https://www.flaticon.com/free-icon/home_25694?term=home&page=1&position=1&origin=search&related_id=25694-->
+                </div>
+
+                <div class="modal-line">
+                  <img src="images/me.png" alt=""><a href="about.html">About Me</a> <!--Image taken from: https://www.flaticon.com/free-icon/user_456212?term=me&page=1&position=9&origin=search&related_id=456212-->
+                </div>
+
+                <div class="modal-line">
+                  <img src="images/sustainability.png" alt=""><a href="sustainability.html">Sustainability</a> <!--Image taken from: https://www.flaticon.com/free-icon/save_1684337?term=sustainability&page=1&position=10&origin=search&related_id=1684337-->
+                </div>
+
+                <div class="modal-line">
+                  <img src="images/sp.png" alt=""><a href="green@sp.html">Green @ SP</a> <!--Image taken from: https://www.flaticon.com/free-icon/adobe-spark_9814821?term=sp&page=1&position=9&origin=search&related_id=9814821-->
+                </div>
+              </div>
+
+              <div class="mb-5 mobile-modal-footer d-flex justify-content-center">
+                <a class="mx-2" href="https://www.instagram.com/li.y0ng/" target="_blank"><img src="images/contactimg1.png" alt=""></a>
+                <!--Instagram Imgage - from: https://www.freepik.com/free-vector/social-media-icons-vector-set-with-facebook-instagram-twitter-tiktok-youtube-logos_17221200.htm#query=instagram%20logo%20white&position=0&from_view=keyword&track=ais-->
+                <a class="mx-2" href="tel:97262926" target="_blank"><img src="images/contactimg2.png" alt=""></a>
+                <!--Phone Image - from: https://icon-library.com/icon/phone-white-icon-23.html-->
+                <a class="mx-2" href="mailto:yongjie2468@gmail.com" target="_blank"><img src="images/contactimg3.png" alt=""></a>
+                <!--E-Mail Image - from: https://www.pngkit.com/bigpic/u2e6u2u2q8t4a9u2/-->
+                <a class="mx-2" href="https://www.youtube.com/@Wuddke" target="_blank"><img src="images/youtube.logo.png" alt=""></a>
+                <!--Youtube Image - from: https://www.pngkit.com/bigpic/u2e6u2u2q8t4a9u2/-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </nav>
+    </header>
+    <!--Navbar-->
+
+    <!-- Hero -->
+    <div
+      class="text-center text-white hero d-flex justify-content-center align-items-center"
+      style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.087),
+            rgba(18, 8, 8, 0.233)
+          ),
+          url(images/sustainability.hero.jpg);
+      "
+    >
+      <!-- Image from: https://naturephotographeroftheyear.com/-->
+      <div style="top: 35%" class="hero-text">
+        <h1>Sustainability</h1>
+        <p>Reduce, Reuse, Recycle</p>
+      </div>
+    </div>
+    <!-- Hero -->
+
+    <div id="sus-intro" class="container text-center p-5">
+      <h1 class="text-success">Save Our Earth</h1>
+      <p>
+        Our plant is warming up and if we don't act fast the effects of it may
+        be irrevisible.<br />
+        Before it's too late, WE can make a change.
+      </p>
+      <br />
+      <h1 class="text-success">Join Us</h1>
+      <p>
+        Join the movement towards a greener and more sustainable world starting
+        <em>TODAY</em>. Discover practical tip, innovative solutions, and
+        actionable steps to save the Earth. Together, we can make a positive
+        impact on the environment and secure a thriving future for generations
+        to come.
+      </p>
+      <img class="img-fluid p-lg-5" src="images/earthimg.png" alt="" />
+      <!--Image made on Canva-->
+    </div>
+    <div class="container text-center p-5 w-75">
+      <h2 class="text-success">Take part in Earth Hour!</h2>
+      <p>Earth Hour is a worldwide movement organised by WWF, held annualy to encourage individually, business and communities to save energy by turning off non-essential electric light, for an hour. Take part in next years Earth Hour and turn off all your lights!</p>
+      <p class="display-3" id="countdown"></p>
+      <script src="javascript/countdown.js"></script>
+    </div>
+
+
+
+    <div id="sus-thoughts" class="px-5 pb-3 container">
+      <hr id="sustain-thoughts" class="line" />
+      <h2 class="text-success">My Thoughts</h2>
+      <p>
+        &nbsp;It definitely feels that the earth is getting warmer compared to a
+        few years ago, many of us feel that the little things we do would
+        probably not help in the bigger picture. Well the thing is, although it
+        may feel that way, I believe that together if we all do our part in
+        changing into a sustainable lifestyle, our collective efforts can make a
+        change on the world. Henry Keller once said
+        <q>Alone we can do so little; together we can do so much</q>.
+      </p>
+      <hr id="sus-tips" class="line" />
+    </div>
+
+    <div class="container">
+      <h4 class="text-success text-center">
+        Here's What We Can Do To Save the Earth
+      </h4>
+      <div class="row blocks">
+        <div class="offset-lg-0 offset-1 col-10 col-lg-4 rounded my-3">
+          <div class="footprint fade-in-text rounded p-3 h-100">
+            <h4>Reduce Your Carbon Footprint</h4>
+            <p>
+              Help reduce carbon emissions by taking walks, going for cycles and
+              taking public transport, instead of using private or personal
+              vehicles, every gallon of gasoline you save avoids 22 pounds of
+              CO2 emissions
+            </p>
+          </div>
+        </div>
+        <div class="offset-lg-0 offset-1 col-10 col-lg-4 rounded my-3">
+          <div class="donate fade-in-text rounded p-3 h-100">
+            <h4>Donate to Green Organisations</h4>
+            <p>
+              By donating to green organisations, you provide them with
+              financial support which in turns allows them to fund their
+              environmental conservation efforts.
+            </p>
+          </div>
+        </div>
+        <div class="offset-lg-0 offset-1 col-10 col-lg-4 rounded my-3">
+          <div class="green-activities fade-in-text rounded p-3 h-100">
+            <h4>Take Part in Environmental Activities</h4>
+            <p>
+              Participating in environmental activities often involves engaging
+              in conservation efforts such as planting trees, restoring habitats
+              of animals, or doing cleanups which helps contributes to the
+              environment.
+            </p>
+          </div>
+        </div>
+
+        <div class="offset-lg-0 offset-1 col-10 col-lg-4 rounded my-3">
+          <div class="recycle fade-in-text rounded p-3 h-100">
+            <h4>Recycle waste</h4>
+            <p>
+              Recycling waste such as paper reduces the need for deforestation
+              in order to produce more paper which not only save our trees but
+              also prevent greenhouse gases from being released from the burning
+              of forests.
+            </p>
+          </div>
+        </div>
+        <div class="offset-lg-0 offset-1 col-10 col-lg-4 rounded my-3">
+          <div class="waste fade-in-text rounded p-3 h-100">
+            <h4>Reduce Waste</h4>
+            <p>
+              Reducing the waste you dipose of helps to conserve the space in
+              our landfills, reducing the need to build even more landfill to
+              accomodate to the built-up waste, that would have caused air and
+              water pollution, while taking up our valuable space.
+            </p>
+          </div>
+        </div>
+        <div class="offset-lg-0 offset-1 col-10 col-lg-4 rounded my-3">
+          <div class="reuse fade-in-text rounded p-3 h-100">
+            <h4>Reuse Household Items</h4>
+            <p>
+              Reusing your household items helps to limits the need to buy new
+              materials, saving you money and reducing waste by delaying
+              disposal. This helps to conserve our raw materials, prevents
+              overuse of resources and preserves them.
+            </p>
+          </div>
+        </div>
+        <hr id="sus-goals" class="line" />
+      </div>
+    </div>
+
+    <div class="container personal-goals">
+      <h2 class="text-center pb-3 pt-3 text-success">Personal Goals</h2>
+      <h4 class="mb-3">I pledge to go sustainable by:</h4>
+      <ul class="mb-5">
+        <li>
+          Bringing my own tote bags instead of using single-use plastic bags
+          when going shopping.
+        </li>
+        <li>
+          Taking public transport or cycling instead of hiring a cab to reduce
+          my carbon footprint.
+        </li>
+        <li>
+          Saving energy by turning off electrical appliance when not in use.
+        </li>
+        <li>
+          Purchasing goods and services from companies that use sustainable and
+          environmentally friendly products.
+        </li>
+        <li>
+          Educate my family and friends on how and why they should lead a
+          sustainable lifestyle.
+        </li>
+        <li>
+          Reducing food watse by choosing portion sizes wisely and taking only
+          what I can eat.
+        </li>
+      </ul>
+    </div>
+
+    <hr id="sus-efforts" class="line" />
+    <div class="container mb-5 p-3 w-75">
+      <h3 class="text-center pb-3 text-success">What Singapore has done</h3>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Green Plan 2012
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Launched by Ministry of Environment in 2002, it aimed to generate
+              60% of Singapore’s energy needs using natural gas by 2012. Natural
+              gas is a cleaner form of energy in comparison to coal because it
+              does not produce smoke, resulting in lower carbon emission. It was
+              successful as 79% of Singapore energy was generated from natural
+              gas as early as 2010 which exceeded the Ministry of Environments
+              target ahead of schedule.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              Plant-a-Tree Programme
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Started by the Garden City Fund and Singapore Environment Council
+              in 1997 as Tree planting day, it aims to maintain Singapore’s
+              status as a Garden City by planting trees, residents are
+              encouraged to donate money or volunteer in tree planting events
+              held monthly throughout Singapore. More trees planted can help to
+              take in carbon dioxide which is a greenhouse gas that traps
+              heat,the programme has contributed to an estimated 60,000 trees
+              planted throughout Singapore yearly by the National Park Boards.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              Green Mark Scheme
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              Launched by Building Construction Authority in 2005, the scheme
+              evaluates and certifies building according to how energy-effecient
+              and environmentally friendly they are. It encourages more new
+              ‘green buildings to be constructed, that uses less energy and
+              provide the same service, such as LED lighting or those running
+              partly on solar energy. Existing ‘green’ building such as National
+              Library Building, are 30% more energy efficient than other
+              buildings in Singapore It uses vertical greenery which reduces
+              solar heat gain, resuling in less air conditioning to keep the
+              building cool, cutting down carbon emissions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <hr id="sus-pledge" class="line" />
+    <div
+      class="container w-75 my-4 rounded"
+      style="background-color: rgb(141, 220, 151) "
+    >
+      <h2 class="text-center text-dark p-3">
+        Take a pledge towards a Green Nation
+      </h2>
+      <form class="row g-3 was-validated">
+        <label>1. Enter your name</label>
+        <div class="col-md-4">
+          <label for="validationServer01" class="form-label">First name</label>
+          <input type="text" class="form-control is-valid" id="validationServer01" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServer02" class="form-label">Last name</label>
+          <input type="text" class="form-control is-valid" id="validationServer02" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationServerUsername" class="form-label">Username</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+            <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Options -->
+        <div class="form-group mb-3 container">
+          <label for="validationServer04" class="form-label">2. Which best describe your current profile:</label>
+          <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+            <option selected disabled value="">Choose...</option>
+            <option>Student</option>
+            <option>Employer</option>
+            <option>Employee(part time, full time)</option>
+            <option>Unemployed</option>
+            <option>Full time homemaker</option>
+            <option>Full time National Service</option>
+            <option>Retiree</option>
+            <option>Others</option>
+          </select>
+          <div id="validationServer04Feedback" class="invalid-feedback">
+            Please select a valid profile.
+          </div>
+        </div>
+        <!-- Profile Options -->
+
+        <!-- Range -->
+        <div class="form-group mb-3 container">
+          <label for="recycleRange" class="form-label">3. How often do you recycle right now?</label>
+          <input type="range" class="form-range" min="1" max="5" step="1" id="recycleRange">
+          <div class="d-flex justify-content-between">
+            <label for="recycleRange" class="form-label">Never</label>
+            <label for="recycleRange" class="form-label">Barely</label>
+            <label for="recycleRange" class="form-label">Often</label>
+            <label for="recycleRange" class="form-label">Frequent</label>
+            <label for="recycleRange" class="form-label">Always</label>
+          </div>
+        </div>
+        <!-- Range -->
+
+        <!--Radio-->
+        <div class="form-group container mb-3">
+          <label>4. Please choose a pledge category that best describes what you are
+          prepared to do:</label>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck2">Contributer</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck2">Advocate</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked" required>
+            <label class="form-check-label" for="validationFormCheck3">Champion</label>
+            <div class="invalid-feedback">Please select an option</div>
+          </div>
+        </div>
+        <!-- Radio -->
+        <!-- Table -->
+        <div class="table-responsive">
+          <table class="table d-block table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">Contributer</th>
+                <th scope="col">Advocate</th>
+                <th scope="col">Chamption</th>
+              </tr>
+            </thead>
+            <tbody class="fit">
+              <tr>
+                <td>
+                  Adopt theses habits :
+                  <ul>
+                    <li>Set temperature of air-conditiong to 25</li>
+                    <li>Use energy efficient appliances</li>
+                    <li>Use reusable bags/ containers/ bottles</li>
+                    <li>Support local produce</li>
+                  </ul>
+                </td>
+                <td>
+                  Adopt <strong>Contributer</strong> habits and:
+                  <ul>
+                    <li>
+                      Encourage friends, family and the community to pratice
+                      sustainability
+                    </li>
+                    <li>Take part in sustainabile events and initiatives</li>
+                  </ul>
+                </td>
+                <td>
+                  Adopt <strong>Advocate</strong> habits and:
+                  <ul>
+                    <li>
+                      Start your own sustainable initiatives and get the
+                      community to take part in them
+                    </li>
+                    <li>Join and collaborate with green organisations</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Table -->
+
+        <!-- Optionnal form -->
+        <div class="form-group mb-3">
+          <label for="floatingTextarea2"
+            >5. Additional Pledges: (optional)</label
+          >
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea2"
+              style="height: 100px"
+            ></textarea>
+            <label for="floatingTextarea2">I promise to...</label>
+          </div>
+        </div>
+        <!-- Optionnal form -->
+
+        <!-- Email -->
+        <div class="form-group mb-3">
+          <label for="inputEmail" class="col-form-label">6. Email</label>
+          <input type="email" class="form-control" id="inputEmail" required/>
+        </div>
+        <!-- Email -->
+
+        <div class="form-group mb-3">
+          <label>7. I agree to:</label>
+          <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3" required>
+            <label class="form-check-label" for="invalidCheck3">
+              Allow my pledge to be published on the website.
+            </label>
+          </div>
+        </div>
+
+        <div class="for-group mb-3">
+          <label class="form-check-label" for="flexSwitchCheckDefault">8. Recieve news letter on sustainability in the future</label>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-primary mb-5" type="submit">Submit form</button>
+        </div>
+      </form>
+    </div>
+    <!-- Form -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Form -->
+        <section class="">
+          <form>
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  <strong>Sign up for our newsletter</strong>
+                </p>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-white mb-4">
+                  <input
+                    type="email"
+                    id="form5Example21"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="form5Example21"
+                    >Email address</label
+                  >
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                  Subscribe
+                </button>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+
+        <!-- Section: Text -->
+        <section class="mb-4">
+          <p>Welcome to my webpage</p>
+        </section>
+        <!-- Section: Text -->
+
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <a href="index.html" class="text-white text-uppercase"><h5>Home</h5></a>
+
+              <ul class="list-unstyled mb-0">
+                <li><a href="index.html#index-content" class="text-white">Content</a></li>
+                <li><a href="index.html#index-cardgame" class="text-white">Card Game</a></li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <a class="dropdown-item" href="about.html"><h5>About Me</h5></a>
+              
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="about.html#about-intro" class="text-white">Intro</a>
+                </li>
+                <li>
+                  <a href="about.html#about-personality" class="text-white">Personality</a>
+                </li>
+                <li>
+                  <a href="about.html#about-values" class="text-white">Values</a>
+                </li>
+                <li>
+                  <a href="about.html#about-interests" class="text-white">Interests</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <a class="dropdown-item" href="sustainability.html"><h5>Sustainability</h5></a>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="sustainability.html#sus-intro" class="text-white">Intro</a>
+                </li>
+                <li>
+                  <a href="sustainability.html#sus-thoughts" class="text-white">Thoughts</a>
+                </li>
+                <li>
+                  <a href="sustainability.html#sus-tips" class="text-white">Tips</a>
+                </li>
+                <li>
+                  <a href="sustainability.html#sus-goals" class="text-white">Goals</a>
+                </li>
+                <li>
+                  <a href="sustainability.html#sus-efforts" class="text-white">Singapore's efforts</a>
+                </li>
+                <li>
+                  <a href="sustainability.html#sus-pledge" class="text-white">Pledge</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <a class="dropdown-item" href="green@sp.html"><h5>Green @ SP</h5></a>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="green@sp.html#sp-pledge" class="text-white">Sp's Pledge</a>
+                </li>
+                <li>
+                  <a href="green@sp.html#sp-progress" class="text-white">Progress</a>
+                </li>
+                <li>
+                  <a href="green@sp.html#sp-initiatives" class="text-white">Initiatives</a>
+                </li>
+                <li>
+                  <a href="green@sp.html#sp-collab" class="text-white"
+                    >Collaborations & Partnerships</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright: Li Yongjie
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- Footer taken from: https://mdbootstrap.com/ -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
