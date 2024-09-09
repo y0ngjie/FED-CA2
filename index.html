@@ -125,7 +125,6 @@
     }
   </style>
   <style>
-    /* ... (previous styles remain unchanged) ... */
     
     .mushroom-steps {
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -144,6 +143,17 @@
     .mushroom-steps li {
       margin-bottom: 10px; /* Add some space between list items for better readability */
     }
+
+    .language-switch {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+      }
+
+      .lang-th {
+        display: none;
+      }
   </style>
   <body style="background-image: linear-gradient(rgb(219, 224, 135), rgba(229, 210, 171, 0.9));
   background-attachment: fixed">
@@ -167,34 +177,25 @@
             <div class="modal-dialog">
               <div class="modal-content modal-content-contact">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Me!</h1>
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Us!</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body modal-body-contact">
-                  <form class="mb-5">
-                    <div class="mb-3 row">
-                      <label for="staticEmail" class="col-sm-2 col-form-label">Email:</label>
-                      <div class="col-sm-10">
-                        <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="yongjie@example.com">
-                      </div>
-                    </div>
-                    <div class="mb-3">
-                      <label for="message-text" class="col-form-label">Message:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                  </form>
+                  <div>
+                    <h3>About us</h3>
+                    <p>We are Uthai Thani Disability Person Association, an independent and united community. Found in 2018, we provide support & jobs to those with disabilities and look after one another.</p>
+                  </div>
 
                   <div class="d-inline-flex">
-                    <a class="mx-2" href="https://www.instagram.com/li.y0ng/" target="_blank"><img src="images/contactimg1.png" alt=""></a>
-                    <a class="mx-2" href="tel:97262926" target="_blank"><img src="images/contactimg2.png" alt=""></a>
-                    <a class="mx-2" href="mailto:yongjie2468@gmail.com" target="_blank"><img src="images/contactimg3.png" alt=""></a>
-                    <a class="mx-2" href="https://www.youtube.com/@Wuddke" target="_blank"><img src="images/youtube.logo.png" alt=""></a>
+                    <a class="mx-2" href="https://www.facebook.com/p/%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%84%E0%B8%A1%E0%B8%84%E0%B8%99%E0%B8%9E%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%B1%E0%B8%A2%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5-100057566674796/?locale=th_TH" target="_blank"><i class="fa-brands fa-facebook text-white" style="font-size: 50px;"></i></a>
+                    <a class="mx-2" href="https://www.tiktok.com/@user2654215259817?_t=8pa1jibub2m&_r=1" target="_blank"><i class="fa-brands fa-tiktok text-white" style="font-size: 50px;"></i></a>
+                    <a class="mx-2" href="tel:+6597262926" target="_blank"><img src="images/contactimg2.png" alt=""></a>
+                    <a class="mx-2" href="https://line.me/th/" target="_blank"><i class="fa-brands fa-line text-white" style="font-size: 50px;"></i>></i></a>
                   </div>
                 </div>
 
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Send message</button>
                 </div>
               </div>
             </div>
@@ -202,29 +203,30 @@
         </div>
 
         <!-- Button trigger modal-mobile -->
-        <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="modal" data-bs-target="#navbModal">
-          <span class="navbar-toggler-icon"></span>
-       </button>
+        <button class="navbar-toggler d-xl-none" style="background-color: antiquewhite;" type="button" data-bs-toggle="modal" data-bs-target="#navbModal">
+          <h1 class="modal-title fs-5 p-2" id="exampleModalLabel">Contact Us!</h1>
+        </button>
 
         <!-- Modal-mobile -->
         <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-mobile">
             <div class="modal-content modal-content-mobile">
               <div class="modal-header modal-header-mobile">
-                <img src="images/planet-earth-logo2.png" alt="Logo" />
+                <img src="images/disablility.png"Logo" />
               </div>
 
               <div class="modal-body-mobile">
-                <div class="modal-line">
-                  <img src="images/me.png" alt=""><a href="about.html">About Me</a>
+                <div>
+                  <h3>About us</h3>
+                  <p>We are Uthai Thani Disability Person Association, an independent and united community. Found in 2018, we provide support & jobs to those with disabilities and look after one another.</p>
                 </div>
               </div>
 
               <div class="mb-5 mobile-modal-footer d-flex justify-content-center">
-                <a class="mx-2" href="https://www.instagram.com/li.y0ng/" target="_blank"><img src="images/contactimg1.png" alt=""></a>
-                <a class="mx-2" href="tel:97262926" target="_blank"><img src="images/contactimg2.png" alt=""></a>
-                <a class="mx-2" href="mailto:yongjie2468@gmail.com" target="_blank"><img src="images/contactimg3.png" alt=""></a>
-                <a class="mx-2" href="https://www.youtube.com/@Wuddke" target="_blank"><img src="images/youtube.logo.png" alt=""></a>
+                <a class="mx-2" href="https://www.facebook.com/p/%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%84%E0%B8%A1%E0%B8%84%E0%B8%99%E0%B8%9E%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%B1%E0%B8%A2%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5-100057566674796/?locale=th_TH" target="_blank"><i class="fa-brands fa-facebook text-white" style="font-size: 60px;"></i></a>
+                  <a class="mx-2" href="https://www.tiktok.com/@user2654215259817?_t=8pa1jibub2m&_r=1" target="_blank"><i class="fa-brands fa-tiktok text-white" style="font-size: 60px;"></i></a>
+                  <a class="mx-2" href="tel:+6597262926" target="_blank"><img src="images/contactimg2.png" alt=""></a>
+                  <a class="mx-2" href="https://line.me/th/" target="_blank"><i class="fa-brands fa-line text-white" style="font-size: 60px;"></i>></i></a>
               </div>
             </div>
           </div>
@@ -238,7 +240,7 @@
     <!-- Hero -->
     <div class="text-center text-white hero d-flex justify-content-center align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.409),rgba(18, 8, 8, 0.555)),url(./images/villagers.jpg);">
         <div style="top:45%" class="hero-text">
-          <h1 class="text-center">Welcome to Your Mushroom Growing Adventure!</h1>
+          <h1 class="text-center">Welcome to Your Oyster Mushroom Growing Adventure!</h1>
           <p>A guide by Uthai Thani Disability Person Association</p>
         </div>
     </div>
@@ -247,8 +249,7 @@
     <div id="about-intro" class="container-fluid p-0 text-center">
       <div class="row p-lg-3 m-lg-5 m-3 p-3 bg-white clearfix rounded">
           <div class="col-lg-6">
-              <h2><i class="fas fa-house icon-large"></i> How to grow your own Starter Kit</h2>
-              <p>Follow these steps to grow your own mushrooms:</p>
+              <h2><i class="fas fa-house icon-large"></i> How we make & grow our mushroom</h2>
               <div class="mushroom-steps" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
                 <ol>
                   <li>Pour out 4 bags of sawdust (80kg)</li>
@@ -322,7 +323,46 @@
           <li>Store fresh mushrooms in a paper bag in the refrigerator for up to a week</li>
         </ul>
       </div>
+      
+      <!-- Safety information -->
+      <div class="section-card">
+        <h2><i class="fas fa-shield-alt icon-large"></i> Safety First</h2>
+        <p>While mushroom growing is generally safe, it's important to keep these precautions in mind:</p>
+        <ul>
+          <li>Always wash your hands before and after handling your mushroom kit.</li>
+          <li>Keep your growing area clean and free from contaminants.</li>
+          <li>Never consume mushrooms that you cannot positively identify.</li>
+          <li>If you notice any unusual colors or smells, dispose of the kit safely.</li>
+          <li>Keep your kit out of reach of children and pets.</li>
+        </ul>
+      </div>
 
+      <!-- Sustainability information -->
+      <div class="section-card">
+        <h2><i class="fas fa-recycle icon-large"></i> Our Commitment to Sustainability</h2>
+        <p>At Mushroom Starter Kit, we're committed to sustainable practices:</p>
+        <ul>
+          <li>Our growing substrates are made from recycled agricultural waste.</li>
+          <li>All packaging is biodegradable or recyclable.</li>
+          <li>We use energy-efficient processes in our production facilities.</li>
+          <li>By growing your own mushrooms, you're reducing food miles and packaging waste!</li>
+        </ul>
+        <a href="#" class="btn btn-custom mt-3">Learn More About Our Eco-Initiatives</a>
+      </div>
+            
+      <!-- Educational content -->
+      <div class="section-card">
+        <h2><i class="fas fa-book icon-large"></i> Mushroom Growing 101</h2>
+        <h4>The Science Behind Mushroom Growing</h4>
+        <p>Mushrooms are the fruiting bodies of certain fungi. They grow from spores, not seeds, and feed on organic matter rather than using photosynthesis like plants.</p>
+        <h4>A Brief History of Mushroom Cultivation</h4>
+        <p>Humans have been cultivating mushrooms for thousands of years, with the first recorded cultivation in China around 600 AD. Today, mushroom cultivation is a multi-billion dollar global industry!</p>
+        <h4>Fun Mushroom Facts</h4>
+        <ul>
+          <li>The largest living organism on Earth is a honey fungus measuring 2.4 miles (3.8 km) across
+          <li>Some mushrooms are bioluminescent and glow in the dark!</li>
+      </div>
+      
       <!-- Recipes and uses -->
       <div class="section-card">
         <h2><i class="fas fa-utensils icon-large"></i> Delicious Mushroom Recipes</h2>
@@ -360,85 +400,45 @@
         </div>
       </div>
 
-
-      <!-- Safety information -->
-      <div class="section-card">
-        <h2><i class="fas fa-shield-alt icon-large"></i> Safety First</h2>
-        <p>While mushroom growing is generally safe, it's important to keep these precautions in mind:</p>
-        <ul>
-          <li>Always wash your hands before and after handling your mushroom kit.</li>
-          <li>Keep your growing area clean and free from contaminants.</li>
-          <li>Never consume mushrooms that you cannot positively identify.</li>
-          <li>If you notice any unusual colors or smells, dispose of the kit safely.</li>
-          <li>Keep your kit out of reach of children and pets.</li>
-        </ul>
-      </div>
-
-      <!-- Sustainability information -->
-      <div class="section-card">
-        <h2><i class="fas fa-recycle icon-large"></i> Our Commitment to Sustainability</h2>
-        <p>At Mushroom Starter Kit, we're committed to sustainable practices:</p>
-        <ul>
-          <li>Our growing substrates are made from recycled agricultural waste.</li>
-          <li>All packaging is biodegradable or recyclable.</li>
-          <li>We use energy-efficient processes in our production facilities.</li>
-          <li>By growing your own mushrooms, you're reducing food miles and packaging waste!</li>
-        </ul>
-        <a href="#" class="btn btn-custom mt-3">Learn More About Our Eco-Initiatives</a>
-      </div>
-
-      <!-- Product line expansion -->
-      <div class="section-card">
-        <h2><i class="fas fa-store icon-large"></i> Explore Our Product Line</h2>
-        <p>Discover more ways to grow and enjoy mushrooms:</p>
-        <div class="row">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="https://via.placeholder.com/300x200.png?text=Oyster+Mushroom+Kit" class="card-img-top" alt="Oyster Mushroom Kit">
-              <div class="card-body">
-                <h5 class="card-title">Oyster Mushroom Kit</h5>
-                <p class="card-text">Easy to grow and delicious in stir-fries!</p>
-                <a href="#" class="btn btn-custom">Shop Now</a>
+          
+          <!-- Product line expansion -->
+          <div class="section-card">
+            <h2><i class="fas fa-store icon-large"></i> Explore Our Product Line</h2>
+            <p>Discover more ways to grow and enjoy mushrooms:</p>
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img src="https://via.placeholder.com/300x200.png?text=Oyster+Mushroom+Kit" class="card-img-top" alt="Oyster Mushroom Kit">
+                  <div class="card-body">
+                    <h5 class="card-title">Oyster Mushroom Kit</h5>
+                    <p class="card-text">Easy to grow and delicious in stir-fries!</p>
+                    <a href="#" class="btn btn-custom">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img src="https://via.placeholder.com/300x200.png?text=Sterilized+Box" class="card-img-top" alt="Shiitake Log Kit">
+                  <div class="card-body">
+                    <h5 class="card-title">Sterilized Box</h5>
+                    <p class="card-text">Have a clean environment to grow your mushroom!</p>
+                    <a href="#" class="btn btn-custom">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <div class="card">
+                  <img src="https://via.placeholder.com/300x200.png?text=Mushroom+Grow+Bags" class="card-img-top" alt="Mushroom Grow Bags">
+                  <div class="card-body">
+                    <h5 class="card-title">Mushroom Grow Bags</h5>
+                    <p class="card-text">For the more experienced grower.</p>
+                    <a href="#" class="btn btn-custom">Shop Now</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="https://via.placeholder.com/300x200.png?text=Sterilized+Box" class="card-img-top" alt="Shiitake Log Kit">
-              <div class="card-body">
-                <h5 class="card-title">Sterilized Box</h5>
-                <p class="card-text">Have a clean environment to grow your mushroom!</p>
-                <a href="#" class="btn btn-custom">Shop Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="https://via.placeholder.com/300x200.png?text=Mushroom+Grow+Bags" class="card-img-top" alt="Mushroom Grow Bags">
-              <div class="card-body">
-                <h5 class="card-title">Mushroom Grow Bags</h5>
-                <p class="card-text">For the more experienced grower.</p>
-                <a href="#" class="btn btn-custom">Shop Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Educational content -->
-      <div class="section-card">
-        <h2><i class="fas fa-book icon-large"></i> Mushroom Growing 101</h2>
-        <h4>The Science Behind Mushroom Growing</h4>
-        <p>Mushrooms are the fruiting bodies of certain fungi. They grow from spores, not seeds, and feed on organic matter rather than using photosynthesis like plants.</p>
-        <h4>A Brief History of Mushroom Cultivation</h4>
-        <p>Humans have been cultivating mushrooms for thousands of years, with the first recorded cultivation in China around 600 AD. Today, mushroom cultivation is a multi-billion dollar global industry!</p>
-        <h4>Fun Mushroom Facts</h4>
-        <ul>
-          <li>The largest living organism on Earth is a honey fungus measuring 2.4 miles (3.8 km) across
-
-  </div>
-
-  <script
+          <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"
