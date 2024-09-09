@@ -5,11 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uthai Thani Disability Person Association</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="icon" type="image/x-icon" href="images/disablility.png">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+      body {
+        font-family: 'Satisfy', cursive;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Satisfy', cursive;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      .contact-btn {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        transition: all 0.3s ease 0s;
+      }
+
+      .contact-btn:hover {
+        background-color: #45a049;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        transform: translateY(-7px);
+      }
+    </style>
   </head>
-  <body style=" background-image: linear-gradient(rgb(219, 224, 135), rgba(170, 240, 156, 0.9));
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Poppins:wght@300;400;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+      background-image: linear-gradient(rgb(219, 224, 135), rgba(229, 210, 171, 0.9));
+      background-attachment: fixed;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Satisfy', cursive;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .section-card {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      padding: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .section-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .icon-large {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #4CAF50;
+    }
+
+    .btn-custom {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #45a049;
+      box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+    }
+
+    .contact-form {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .recipe-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .recipe-card-body {
+      padding: 15px;
+    }
+  </style>
+  <style>
+    /* ... (previous styles remain unchanged) ... */
+    
+    .mushroom-steps {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: left; /* Align text to the left */
+      font-size: 14px;
+      /* Set text color to grey*/
+      color: #333;
+
+
+    }
+    
+    .mushroom-steps ol {
+      padding-left: 14px; /* Add some padding to the left of the ordered list */
+    }
+    
+    .mushroom-steps li {
+      margin-bottom: 10px; /* Add some space between list items for better readability */
+    }
+  </style>
+  <body style="background-image: linear-gradient(rgb(219, 224, 135), rgba(229, 210, 171, 0.9));
   background-attachment: fixed">
     <!--Navbar-->
     <header>
@@ -20,18 +156,9 @@
         </a>
         
         <div class="navb-items d-none d-xl-flex">
-          <div class="nav-item dropdown d-flex">
-            <button type="button" class="btn" onclick="location.href='index.html'">Home</button>
-          </div>
-
-          <div class="nav-item dropdown d-flex">
-            <button type="button" class="btn text-nowrap" onclick="location.href='about.html'">Mushroom</button>
-          </div>
-
-
           <div class="item-button">
-            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Contact Me
+            <button type="button" class="contact-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Contact Us!
             </button>
           </div>
           
@@ -59,13 +186,9 @@
 
                   <div class="d-inline-flex">
                     <a class="mx-2" href="https://www.instagram.com/li.y0ng/" target="_blank"><img src="images/contactimg1.png" alt=""></a>
-                    <!--Instagram Imgage - from: https://www.freepik.com/free-vector/social-media-icons-vector-set-with-facebook-instagram-twitter-tiktok-youtube-logos_17221200.htm#query=instagram%20logo%20white&position=0&from_view=keyword&track=ais-->
                     <a class="mx-2" href="tel:97262926" target="_blank"><img src="images/contactimg2.png" alt=""></a>
-                    <!--Phone Image - from: https://icon-library.com/icon/phone-white-icon-23.html-->
                     <a class="mx-2" href="mailto:yongjie2468@gmail.com" target="_blank"><img src="images/contactimg3.png" alt=""></a>
-                    <!--E-Mail Image - from: https://www.pngkit.com/bigpic/u2e6u2u2q8t4a9u2/-->
                     <a class="mx-2" href="https://www.youtube.com/@Wuddke" target="_blank"><img src="images/youtube.logo.png" alt=""></a>
-                    <!--E-Mail Image - from: https://www.pngkit.com/bigpic/u2e6u2u2q8t4a9u2/-->
                   </div>
                 </div>
 
@@ -93,23 +216,15 @@
 
               <div class="modal-body-mobile">
                 <div class="modal-line">
-                  <img src="images/home.png" alt=""><a href="index.html">Home</a> <!--Image taken from:https://www.flaticon.com/free-icon/home_25694?term=home&page=1&position=1&origin=search&related_id=25694-->
-                </div>
-
-                <div class="modal-line">
-                  <img src="images/me.png" alt=""><a href="about.html">About Me</a> <!--Image taken from: https://www.flaticon.com/free-icon/user_456212?term=me&page=1&position=9&origin=search&related_id=456212-->
+                  <img src="images/me.png" alt=""><a href="about.html">About Me</a>
                 </div>
               </div>
 
               <div class="mb-5 mobile-modal-footer d-flex justify-content-center">
                 <a class="mx-2" href="https://www.instagram.com/li.y0ng/" target="_blank"><img src="images/contactimg1.png" alt=""></a>
-                <!--Instagram Imgage - from: https://www.freepik.com/free-vector/social-media-icons-vector-set-with-facebook-instagram-twitter-tiktok-youtube-logos_17221200.htm#query=instagram%20logo%20white&position=0&from_view=keyword&track=ais-->
                 <a class="mx-2" href="tel:97262926" target="_blank"><img src="images/contactimg2.png" alt=""></a>
-                <!--Phone Image - from: https://icon-library.com/icon/phone-white-icon-23.html-->
                 <a class="mx-2" href="mailto:yongjie2468@gmail.com" target="_blank"><img src="images/contactimg3.png" alt=""></a>
-                <!--E-Mail Image - from: https://www.pngkit.com/bigpic/u2e6u2u2q8t4a9u2/-->
                 <a class="mx-2" href="https://www.youtube.com/@Wuddke" target="_blank"><img src="images/youtube.logo.png" alt=""></a>
-                <!--Youtube Image - from: https://www.pngkit.com/bigpic/u2e6u2u2q8t4a9u2/-->
               </div>
             </div>
           </div>
@@ -121,196 +236,212 @@
 
 
     <!-- Hero -->
-    <div class="text-center text-white hero d-flex justify-content-center align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.409),rgba(18, 8, 8, 0.555)),url(imagesvillagers.jpg);">
-        <div style="top:35%" class="hero-text">
-          <h1>Instructions</h1>
-          <p>My Personality, Values and Interests</p>
+    <div class="text-center text-white hero d-flex justify-content-center align-items-center" style="background-image: linear-gradient(rgba(0, 0, 0, 0.409),rgba(18, 8, 8, 0.555)),url(./images/villagers.jpg);">
+        <div style="top:45%" class="hero-text">
+          <h1 class="text-center">Welcome to Your Mushroom Growing Adventure!</h1>
+          <p>A guide by Uthai Thani Disability Person Association</p>
         </div>
     </div>
     <!-- Hero -->
 
     <div id="about-intro" class="container-fluid p-0 text-center">
-        <div class="row p-lg-3 m-lg-5 m-3 p-3 bg-white clearfix rounded">
-            <div class="col-lg-4">
-                <h2>How to grow your own Starter Kit</h2>
-                <p>Place holder</p>
-            </div>
-            <div class="col-lg-8">    
-              <!--Set the width of the video to 100% of the container element (video-player) and the height to 480 pixels.-->
-              <iframe height="480" style="width: 100%;"
-              src="https://www.youtube.com/embed/il_t1WVLNxk"> 
-              </iframe> 
-            </div>
-        </div>
-
-        <div class="row p-lg-3 m-lg-5 m-3 p-3 bg-white clearfix rounded">
-          <div class="col-lg-4">
-              <h2>Village process of mushroom production</h2>
-              <p>Place holder</p>
+      <div class="row p-lg-3 m-lg-5 m-3 p-3 bg-white clearfix rounded">
+          <div class="col-lg-6">
+              <h2><i class="fas fa-house icon-large"></i> How to grow your own Starter Kit</h2>
+              <p>Follow these steps to grow your own mushrooms:</p>
+              <div class="mushroom-steps" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                <ol>
+                  <li>Pour out 4 bags of sawdust (80kg)</li>
+                  <li>Measure & pour Mushroom food and mix together</li>
+                  <li>Mix 1kg lime powder, 0.5kg rice bran together in water and mix together</li>
+                  <li>Pour into sawdust & mix together with shovel</li>
+                  <li>Add 500g gypsum & 500g calcium rock powder together in water and mix them</li>
+                  <li>Pour the mixture into the pile and mix</li>
+                  <li>Add enough water to form a clump of mixture</li>
+                  <li>Use a scoop to put mixture into plastic bag</li>
+                  <li>Cover the plastic with a cap to ensure bag is air-tight</li>
+                  <li>Steam the mushroom spores for approx. 10 to prevent contamination from other fungi</li>
+                  <li>Add starter culture into the mushroom spore after creating the sterile environment</li>
+                  <li>The mushrooms will grow after 10-15 days. Enjoy your growing process!</li>
+                </ol>
+              </div>
           </div>
-          <div class="col-lg-8">    
-            <iframe height="480" width="700" 
+          <div class="col-lg-6">    
+            <iframe height="480" style="width: 100%;"
             src="https://www.youtube.com/embed/il_t1WVLNxk"> 
             </iframe> 
           </div>
       </div>
-    </div>
+      <div class="container mt-5">
 
+      <!-- Product-specific instructions -->
+      <div class="section-card">
+        <h2><i class="fas fa-seedling icon-large"></i> Your Starter Kit Instructions</h2>
+        <p>Follow these steps to use your mushroom starter kit:</p>
+        <ol>
+          <li>Open your kit and check all components are present: growing substrate, mushroom spores, spray bottle.</li>
+          <li>Carefully mix the mushroom spores into the substrate according to the package instructions.</li>
+          <li>Place the mixture in the provided container and mist lightly with water.</li>
+          <li>Keep in a dark, warm place (around 70°F or 21°C) for about 2 weeks until you see white mycelium growth.</li>
+          <li>Once growth is visible, move to a cooler area with indirect light and continue to mist daily.</li>
+          <li>Harvest your mushrooms when the caps are fully opened, typically 1-2 weeks after first appearance.</li>
+        </ol>
+        <a href="#" class="btn btn-custom mt-3">Download Detailed Guide</a>
+      </div>
 
-      <!-- Footer -->
-    <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4">
-    
-        <!-- Section: Form -->
-        <section class="">
-            <form>
-            <!--Grid row-->
-            <div class="row d-flex justify-content-center">
-                <!--Grid column-->
-                <div class="col-auto">
-                <p class="pt-2">
-                    <strong>Sign up for our newsletter</strong>
-                </p>
-                </div>
-                <!--Grid column-->
-    
-                <!--Grid column-->
-                <div class="col-md-5 col-12">
-                <!-- Email input -->
-                <div class="form-outline form-white mb-4">
-                    <input type="email" id="form5Example21" class="form-control" />
-                    <label class="form-label" for="form5Example21">Email address</label>
-                </div>
-                </div>
-                <!--Grid column-->
-    
-                <!--Grid column-->
-                <div class="col-auto">
-                <!-- Submit button -->
-                <button type="submit" class="btn btn-outline-light mb-4">
-                    Subscribe
-                </button>
-                </div>
-                <!--Grid column-->
+      <!-- Troubleshooting guide -->
+      <div class="section-card">
+        <h2><i class="fas fa-question-circle icon-large"></i> Troubleshooting & FAQ</h2>
+        <h4>Common Issues:</h4>
+        <ul>
+          <li><strong>No growth after 3 weeks:</strong> Check temperature and moisture levels. Ensure the environment isn't too dry.</li>
+          <li><strong>Mold growth:</strong> If you see green or black mold, unfortunately, you'll need to dispose of the kit and start over.</li>
+          <li><strong>Small or stunted mushrooms:</strong> This usually indicates insufficient moisture. Increase misting frequency.</li>
+        </ul>
+        <h4>FAQ:</h4>
+        <p><strong>Q: How long until I see mushrooms?</strong><br>
+        A: Typically, you'll see the first signs of growth in 2-3 weeks, with harvestable mushrooms in 4-6 weeks.</p>
+        <p><strong>Q: Can I reuse my kit?</strong><br>
+        A: Yes! After your first harvest, you can often get a second or even third flush of mushrooms.</p>
+        <a href="#" class="btn btn-custom mt-3">View Full FAQ</a>
+      </div>
+
+      <!-- Mushroom care tips -->
+      <div class="section-card">
+        <h2><i class="fas fa-leaf icon-large"></i> Mushroom Care Tips</h2>
+        <h4>Optimal Growing Conditions:</h4>
+        <ul>
+          <li><strong>Temperature:</strong> 55-75°F (13-24°C), depending on mushroom variety</li>
+          <li><strong>Humidity:</strong> 80-90%</li>
+          <li><strong>Light:</strong> Indirect or low light is best</li>
+        </ul>
+        <h4>Harvesting Tips:</h4>
+        <ul>
+          <li>Harvest when the mushroom caps are fully opened but before they start to curl upwards</li>
+          <li>Use a sharp knife to cut the stem close to the base</li>
+          <li>Store fresh mushrooms in a paper bag in the refrigerator for up to a week</li>
+        </ul>
+      </div>
+
+      <!-- Recipes and uses -->
+      <div class="section-card">
+        <h2><i class="fas fa-utensils icon-large"></i> Delicious Mushroom Recipes</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="recipe-card">
+              <img src="https://via.placeholder.com/300x200.png?text=Mushroom+Risotto" alt="Mushroom Risotto">
+              <div class="recipe-card-body">
+                <h5>Creamy Mushroom Risotto</h5>
+                <p>A classic Italian dish perfect for showcasing your homegrown mushrooms.</p>
+                <a href="#" class="btn btn-custom btn-sm">View Recipe</a>
+              </div>
             </div>
-            <!--Grid row-->
-            </form>
-        </section>
-        <!-- Section: Form -->
-    
-        <!-- Section: Text -->
-        <section class="mb-4">
-            <p>Welcome to my webpage</p>
-        </section>
-        <!-- Section: Text -->
-    
-        <!-- Section: Links -->
-        <section class="">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <a href="index.html" class="text-white text-uppercase"><h5>Home</h5></a>
-
-              <ul class="list-unstyled mb-0">
-                <li><a href="index.html#index-content" class="text-white">Content</a></li>
-                <li><a href="index.html#index-cardgame" class="text-white">Card Game</a></li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <a class="dropdown-item" href="about.html"><h5>About Me</h5></a>
-              
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="about.html#about-intro" class="text-white">Intro</a>
-                </li>
-                <li>
-                  <a href="about.html#about-personality" class="text-white">Personality</a>
-                </li>
-                <li>
-                  <a href="about.html#about-values" class="text-white">Values</a>
-                </li>
-                <li>
-                  <a href="about.html#about-interests" class="text-white">Interests</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <a class="dropdown-item" href="sustainability.html"><h5>Sustainability</h5></a>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="sustainability.html#sus-intro" class="text-white">Intro</a>
-                </li>
-                <li>
-                  <a href="sustainability.html#sus-thoughts" class="text-white">Thoughts</a>
-                </li>
-                <li>
-                  <a href="sustainability.html#sus-tips" class="text-white">Tips</a>
-                </li>
-                <li>
-                  <a href="sustainability.html#sus-goals" class="text-white">Goals</a>
-                </li>
-                <li>
-                  <a href="sustainability.html#sus-efforts" class="text-white">Singapore's efforts</a>
-                </li>
-                <li>
-                  <a href="sustainability.html#sus-pledge" class="text-white">Pledge</a>
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <a class="dropdown-item" href="green@sp.html"><h5>Green @ SP</h5></a>
-
-              <ul class="list-unstyled mb-0">
-                <li>
-                  <a href="green@sp.html#sp-pledge" class="text-white">Sp's Pledge</a>
-                </li>
-                <li>
-                  <a href="green@sp.html#sp-progress" class="text-white">Progress</a>
-                </li>
-                <li>
-                  <a href="green@sp.html#sp-initiatives" class="text-white">Initiatives</a>
-                </li>
-                <li>
-                  <a href="green@sp.html#sp-collab" class="text-white"
-                    >Collaborations & Partnerships</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <!--Grid column-->
           </div>
-          <!--Grid row-->
-        </section>
-        <!-- Section: Links -->
+          <div class="col-md-4">
+            <div class="recipe-card">
+              <img src="https://via.placeholder.com/300x200.png?text=Stuffed+Mushrooms" alt="Stuffed Mushrooms">
+              <div class="recipe-card-body">
+                <h5>Cheese-Stuffed Mushrooms</h5>
+                <p>An easy and delicious appetizer for your next gathering.</p>
+                <a href="#" class="btn btn-custom btn-sm">View Recipe</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="recipe-card">
+              <img src="https://via.placeholder.com/300x200.png?text=Mushroom+Soup" alt="Mushroom Soup">
+              <div class="recipe-card-body">
+                <h5>Creamy Mushroom Soup</h5>
+                <p>A comforting soup perfect for cold days.</p>
+                <a href="#" class="btn btn-custom btn-sm">View Recipe</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Grid container -->
 
-      <!-- Copyright -->
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2023 Copyright: Li Yongjie
+
+      <!-- Safety information -->
+      <div class="section-card">
+        <h2><i class="fas fa-shield-alt icon-large"></i> Safety First</h2>
+        <p>While mushroom growing is generally safe, it's important to keep these precautions in mind:</p>
+        <ul>
+          <li>Always wash your hands before and after handling your mushroom kit.</li>
+          <li>Keep your growing area clean and free from contaminants.</li>
+          <li>Never consume mushrooms that you cannot positively identify.</li>
+          <li>If you notice any unusual colors or smells, dispose of the kit safely.</li>
+          <li>Keep your kit out of reach of children and pets.</li>
+        </ul>
       </div>
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-    <!-- Footer taken from: https://mdbootstrap.com/ -->
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <!-- Sustainability information -->
+      <div class="section-card">
+        <h2><i class="fas fa-recycle icon-large"></i> Our Commitment to Sustainability</h2>
+        <p>At Mushroom Starter Kit, we're committed to sustainable practices:</p>
+        <ul>
+          <li>Our growing substrates are made from recycled agricultural waste.</li>
+          <li>All packaging is biodegradable or recyclable.</li>
+          <li>We use energy-efficient processes in our production facilities.</li>
+          <li>By growing your own mushrooms, you're reducing food miles and packaging waste!</li>
+        </ul>
+        <a href="#" class="btn btn-custom mt-3">Learn More About Our Eco-Initiatives</a>
+      </div>
+
+      <!-- Product line expansion -->
+      <div class="section-card">
+        <h2><i class="fas fa-store icon-large"></i> Explore Our Product Line</h2>
+        <p>Discover more ways to grow and enjoy mushrooms:</p>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="https://via.placeholder.com/300x200.png?text=Oyster+Mushroom+Kit" class="card-img-top" alt="Oyster Mushroom Kit">
+              <div class="card-body">
+                <h5 class="card-title">Oyster Mushroom Kit</h5>
+                <p class="card-text">Easy to grow and delicious in stir-fries!</p>
+                <a href="#" class="btn btn-custom">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="https://via.placeholder.com/300x200.png?text=Sterilized+Box" class="card-img-top" alt="Shiitake Log Kit">
+              <div class="card-body">
+                <h5 class="card-title">Sterilized Box</h5>
+                <p class="card-text">Have a clean environment to grow your mushroom!</p>
+                <a href="#" class="btn btn-custom">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="https://via.placeholder.com/300x200.png?text=Mushroom+Grow+Bags" class="card-img-top" alt="Mushroom Grow Bags">
+              <div class="card-body">
+                <h5 class="card-title">Mushroom Grow Bags</h5>
+                <p class="card-text">For the more experienced grower.</p>
+                <a href="#" class="btn btn-custom">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Educational content -->
+      <div class="section-card">
+        <h2><i class="fas fa-book icon-large"></i> Mushroom Growing 101</h2>
+        <h4>The Science Behind Mushroom Growing</h4>
+        <p>Mushrooms are the fruiting bodies of certain fungi. They grow from spores, not seeds, and feed on organic matter rather than using photosynthesis like plants.</p>
+        <h4>A Brief History of Mushroom Cultivation</h4>
+        <p>Humans have been cultivating mushrooms for thousands of years, with the first recorded cultivation in China around 600 AD. Today, mushroom cultivation is a multi-billion dollar global industry!</p>
+        <h4>Fun Mushroom Facts</h4>
+        <ul>
+          <li>The largest living organism on Earth is a honey fungus measuring 2.4 miles (3.8 km) across
+
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+  ></script>
+</body>
 </html>
