@@ -118,10 +118,10 @@
         
         <div class="navb-items d-none d-xl-flex">
             <div class="item-button">
-                <button id="langToggle" class="btn btn-primary" style="margin-right: 30px;">
-                    <span class="lang-en">แปลเป็นภาษาไทย</span>
-                    <span class="lang-th">Translate to Eng!</span>
-                </button>
+              <button class="langToggle btn btn-primary" style="margin-right: 30px;">
+                <span class="lang-en">แปลเป็นภาษาไทย</span>
+                <span class="lang-th">Translate to Eng!</span>
+              </button>
             </div>
           <div class="item-button">
             <button type="button" class="contact-btn rounded" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -172,11 +172,10 @@
         
         <!--Translate button-->
         <div class="item-button d-xl-none d-flex">
-          <button id="langToggle" class="btn btn-primary" style="margin-right: 30px;">
+          <button class="langToggle btn btn-primary" style="margin-right: 30px;">
             <span class="lang-en">แปลเป็นภาษาไทย</span>
             <span class="lang-th">Translate to Eng!</span>
           </button>
-
 
         <!-- Button trigger modal-mobile -->
         <button class="navbar-toggler d-xl-none" style="background-color: rgb(236, 211, 179);" type="button" data-bs-toggle="modal" data-bs-target="#navbModal">
@@ -185,6 +184,7 @@
             <span class="lang-th">ติดต่อเรา!</span>
           </h1>
         </button>
+        </div>
 
         
 
@@ -459,10 +459,12 @@
           const thaiElements = document.querySelectorAll('.lang-th');
           thaiElements.forEach(el => el.style.display = 'none');
       
-          // Add event listener to the button
-          const langToggleBtn = document.getElementById('langToggle');
-          langToggleBtn.addEventListener('click', toggleLanguage);
+          // Add event listeners to all toggle buttons
+          const langToggleBtns = document.querySelectorAll('.langToggle');
+          langToggleBtns.forEach(btn => {
+            btn.addEventListener('click', toggleLanguage);
+          });
         });
-      </script>
+      </script> 
     </body>
   </html>
