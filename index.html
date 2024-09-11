@@ -103,6 +103,33 @@
       .lang-th {
         display: none;
       }
+
+      ul {
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+      }
+
+      ol li {
+            counter-increment: item;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+      ol li::before {
+            content: counter(item);
+            margin-right: 10px;
+            background: #4CAF50;
+            border-radius: 50%;
+            color: white;
+            width: 1.5em;
+            height: 1.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
     </style>
   </head>
   <body>
@@ -156,8 +183,7 @@
                   <div class="d-inline-flex">
                     <a class="mx-2" href="https://www.facebook.com/p/%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%84%E0%B8%A1%E0%B8%84%E0%B8%99%E0%B8%9E%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%B1%E0%B8%A2%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5-100057566674796/?locale=th_TH" target="_blank"><i class="fa-brands fa-facebook text-white" style="font-size: 50px;"></i></a>
                     <a class="mx-2" href="https://www.tiktok.com/@user2654215259817?_t=8pa1jibub2m&_r=1" target="_blank"><i class="fa-brands fa-tiktok text-white" style="font-size: 50px;"></i></a>
-                    <a class="mx-2" href="tel:+6597262926" target="_blank"><img src="images/contactimg2.png" alt=""></a>
-                    <a class="mx-2" href="https://line.me/th/" target="_blank"><i class="fa-brands fa-line text-white" style="font-size: 50px;"></i></a>
+                    <a class="mx-2" href="tel:+660930656675" target="_blank"><img src="images/contactimg2.png" alt=""></a>
                   </div>
                 </div>
 
@@ -211,8 +237,7 @@
               <div class="mb-5 mobile-modal-footer d-flex justify-content-center">
                 <a class="mx-2" href="https://www.facebook.com/p/%E0%B8%AA%E0%B8%A1%E0%B8%B2%E0%B8%84%E0%B8%A1%E0%B8%84%E0%B8%99%E0%B8%9E%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%94%E0%B8%AD%E0%B8%B8%E0%B8%97%E0%B8%B1%E0%B8%A2%E0%B8%98%E0%B8%B2%E0%B8%99%E0%B8%B5-100057566674796/?locale=th_TH" target="_blank"><i class="fa-brands fa-facebook text-white" style="font-size: 60px;"></i></a>
                 <a class="mx-2" href="https://www.tiktok.com/@user2654215259817?_t=8pa1jibub2m&_r=1" target="_blank"><i class="fa-brands fa-tiktok text-white" style="font-size: 60px;"></i></a>
-                <a class="mx-2" href="tel:+6597262926" target="_blank"><img src="images/contactimg2.png" alt=""></a>
-                <a class="mx-2" href="https://line.me/th/" target="_blank"><i class="fa-brands fa-line text-white" style="font-size: 60px;"></i></a>
+                <a class="mx-2" href="tel:+660930656675" target="_blank"><img src="images/contactimg2.png" alt=""></a>
               </div>
             </div>
           </div>
@@ -234,9 +259,9 @@
     <div id="about-intro" class="container-fluid p-0 text-center">
       <div class="row p-lg-3 m-lg-5 m-3 p-3 bg-white clearfix rounded">
           <div class="col-lg-6">
-              <h2><i class="fas fa-house icon-large"></i> <span class="lang-en">How we make & grow our mushroom</span><span class="lang-th">วิธีการทำและปลูกเห็ดของเรา</span></h2>
+              <h2> <span class="lang-en"><i class="fas fa-house icon-large"></i> How we make & grow our mushroom</span><span class="lang-th"><i class="fas fa-house icon-large"></i> วิธีการทำและปลูกเห็ดของเรา</span></h2>
               <div class="mushroom-steps" style="color: black; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
-                <ol class="lang-en">
+                <ol class="lang-en" style="text-align: center;">
                   <li>Pour out 4 bags of sawdust (80kg)</li>
                   <li>Measure & pour Mushroom food and mix together</li>
                   <li>Mix 1kg lime powder, 0.5kg rice bran together in water and mix together</li>
@@ -295,10 +320,6 @@
           <li>เมื่อเห็นการเจริญเติบโต ให้ย้ายไปยังพื้นที่ที่เย็นกว่าและมีแสงอ้อม พ่นน้ำทุกวัน</li>
           <li>เก็บเกี่ยวเห็ดของคุณเมื่อดอกบานเต็มที่ โดยทั่วไปจะใช้เวลา 1-2 สัปดาห์หลังจากเห็นดอกเห็ดครั้งแรก</li>
         </ol>
-        <a href="#" class="btn btn-custom mt-3">
-          <span class="lang-en">Download Detailed Guide</span>
-          <span class="lang-th">ดาวน์โหลดคู่มือโดยละเอียด</span>
-        </a>
       </div>
 
       <!-- Troubleshooting guide -->
@@ -326,10 +347,6 @@
         A: Yes! After your first harvest, you can often get a second or even third flush of mushrooms.</p>
         <p class="lang-th"><strong>ถาม: ฉันสามารถนำชุดกลับมาใช้ใหม่ได้หรือไม่?</strong><br>
         ตอบ: ได้! หลังจากการเก็บเกี่ยวครั้งแรก คุณมักจะสามารถได้รับเห็ดรุ่นที่สองหรือแม้แต่รุ่นที่สาม</p>
-        <a href="#" class="btn btn-custom mt-3">
-          <span class="lang-en">View Full FAQ</span>
-          <span class="lang-th">ดูคำถามที่พบบ่อยทั้งหมด</span>
-        </a>
       </div>
 
       <!-- Mushroom care tips -->
@@ -386,7 +403,6 @@
           <li><span class="lang-en">We use energy-efficient processes in our production facilities.</span><span class="lang-th">เราใช้กระบวนการที่มีประสิทธิภาพด้านพลังงานในสถานที่ผลิตของเรา</span></li>
           <li><span class="lang-en">By growing your own mushrooms, you're reducing food miles and packaging waste!</span><span class="lang-th">ด้วยการปลูกเห็ดของคุณเอง คุณกำลังลดระยะทางการขนส่งอาหารและขยะจากบรรจุภัณฑ์!</span></li>
         </ul>
-        <a href="#" class="btn btn-custom mt-3"><span class="lang-en">Learn More About Our Eco-Initiatives</span><span class="lang-th">เรียนรู้เพิ่มเติมเกี่ยวกับการริเริ่มด้านสิ่งแวดล้อมของเรา</span></a>
       </div>
               
       <!-- Educational content -->
@@ -414,11 +430,31 @@
         <div class="row">
           <div class="col-md-4">
             <div class="recipe-card">
-              <img src="https://via.placeholder.com/300x200.png?text=Mushroom+Risotto" alt="Mushroom Risotto">
+              <img src="./images/mushroom.jpg" alt="Mushroom Risotto">
               <div class="recipe-card-body">
-                <h5><span class="lang-en">Creamy Mushroom Risotto</span><span class="lang-th">ริซอตโต้เห็ดครีมมี่</span></h5>
-                <p><span class="lang-en">A classic Italian dish perfect for showcasing your homegrown mushrooms.</span><span class="lang-th">อาหารอิตาเลียนคลาสสิกที่เหมาะสำหรับแสดงเห็ดที่คุณปลูกเองที่บ้าน</span></p>
-                <a href="#" class="btn btn-custom btn-sm"><span class="lang-en">View Recipe</span><span class="lang-th">ดูสูตร</span></a>
+                <h5><span class="lang-en">Fried Oyster Mushroom</span><span class="lang-th">เห็ดนางฟ้าทอด</span></h5>
+                <p><span class="lang-en">A simple and delicious way to enjoy your homegrown oyster mushrooms.</span><span class="lang-th">วิธีง่ายๆ และอร่อยในการเพลิดเพลินกับเห็ดนางฟ้าที่คุณปลูกเองที่บ้าน</span></p>
+                <a href="https://cookingwithayeh.com/fried-oyster-mushrooms-vegan-fried-chicken/" target="_blank" class="btn btn-custom btn-sm"><span class="lang-en">View Recipe</span><span class="lang-th">ดูสูตร</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="recipe-card">
+              <img src="./images/BasilOyster.jpg" alt="Mushroom Risotto">
+              <div class="recipe-card-body">
+                <h5><span class="lang-en">Thai Basil Oyster Mushrooms</span><span class="lang-th">เห็ดนางฟ้าผัดกะเพรา</span></h5>
+                <p><span class="lang-en">A fragrant and flavorful Thai dish made with your homegrown oyster mushrooms and fresh basil.</span><span class="lang-th">เมนูไทยหอมกรุ่นและอร่อยด้วยเห็ดนางฟ้าจากสวนของคุณและใบกะเพราสด</span></p>
+                <a href="https://www.theintrepideater.com/thai-basil-oyster-mushrooms/" target="_blank" class="btn btn-custom btn-sm"><span class="lang-en">View Recipe</span><span class="lang-th">ดูสูตร</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="recipe-card">
+              <img src="./images/kingoyster.jpg" alt="Mushroom Risotto">
+              <div class="recipe-card-body">
+                <h5><span class="lang-en">King Oyster Mushrooms with Thai Chili Peppers and Lime</span><span class="lang-th">เห็ดออรินจิผัดพริกขี้หนูและมะนาว</span></h5>
+                <p><span class="lang-en">A zesty and spicy dish featuring your homegrown king oyster mushrooms, Thai chili peppers, and fresh lime.</span><span class="lang-th">เมนูเผ็ดและสดชื่นที่โดดเด่นด้วยเห็ดออรินจิจากสวนของคุณ พริกขี้หนู และมะนาวสด</span></p>
+                <a href="https://nomnompaleo.com/king-oyster-mushrooms-with-thai-chili-peppers-and-lime" target="_blank" class="btn btn-custom btn-sm"><span class="lang-en">View Recipe</span><span class="lang-th">ดูสูตร</span></a>
               </div>
             </div>
           </div>
@@ -433,11 +469,10 @@
         <div class="row">
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="https://via.placeholder.com/300x200.png?text=Oyster+Mushroom+Kit" class="card-img-top" alt="Oyster Mushroom Kit">
+              <img src="./images/StarterKit.jpg" class="card-img-top" alt="Oyster Mushroom Kit">
               <div class="card-body">
                 <h5 class="card-title"><span class="lang-en">Oyster Mushroom Kit</span><span class="lang-th">ชุดเพาะเห็ดนางรม</span></h5>
                 <p class="card-text"><span class="lang-en">Easy to grow and delicious in stir-fries!</span><span class="lang-th">ปลูกง่ายและอร่อยในอาหารผัด!</span></p>
-                <a href="#" class="btn btn-custom"><span class="lang-en">Shop Now</span><span class="lang-th">ซื้อเลย</span></a>
               </div>
             </div>
           </div>
@@ -451,7 +486,7 @@
         function toggleLanguage() {
           const elements = document.querySelectorAll('.lang-en, .lang-th');
           elements.forEach(el => {
-            el.style.display = el.style.display === 'none' ? 'inline' : 'none';
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
           });
         }
       
